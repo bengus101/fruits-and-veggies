@@ -14,42 +14,24 @@
             <div class="row">
                 <div class="col-sm-4">
                     Veggies
+                    <div class="well well-sm text-center" ng-repeat="item in veggies">
+                        <div><button type="button" class="btn btn-primary glyphicon glyphicon-chevron-left" ng-click="shiftLeft()"></button>{{item}}<button type="button" class="btn btn-primary glyphicon glyphicon-chevron-right"></button></div>
+                    </div>
                 </div>
                 <div class="col-sm-4">
                     Pool
-                    <div class="well well-sm text-center">
-                        <button type="button" class="btn btn-primary glyphicon glyphicon-chevron-left"></button>
-                        <h3>Apple</h3>
-                        <button type="button" class="btn btn-primary glyphicon glyphicon-chevron-right"></button>
+                    <div class="well well-sm text-center" ng-repeat="item in vegetables">
+                        <div><button type="button" class="btn btn-primary glyphicon glyphicon-chevron-left" ng-click="shiftLeft($index)"></button>{{item}}<button type="button" class="btn btn-primary glyphicon glyphicon-chevron-right"></button></div>
                     </div>
-                    <div class="well well-sm text-center">
-                        <button type="button" class="btn btn-primary glyphicon glyphicon-chevron-left"></button>
-                        <h3>Apricot</h3>
-                        <button type="button" class="btn btn-primary glyphicon glyphicon-chevron-right"></button>
-                    </div>
-                    <div class="well well-sm text-center">
-                        <button type="button" class="btn btn-primary glyphicon glyphicon-chevron-left"></button>
-                        <h3>Banana</h3>
-                        <button type="button" class="btn btn-primary glyphicon glyphicon-chevron-right"></button>
-                    </div>
-                    <div class="well well-sm text-center">
-                        <button type="button" class="btn btn-primary glyphicon glyphicon-chevron-left"></button>
-                        <h3>Artichoke</h3>
-                        <button type="button" class="btn btn-primary glyphicon glyphicon-chevron-right"></button>
-                    </div>
-                    <div class="well well-sm text-center">
-                        <button type="button" class="btn btn-primary glyphicon glyphicon-chevron-left"></button>
-                        <h3>Arugula</h3>
-                        <button type="button" class="btn btn-primary glyphicon glyphicon-chevron-right"></button>
-                    </div>
-                    <div class="well well-sm text-center">
-                        <button type="button" class="btn btn-primary glyphicon glyphicon-chevron-left"></button>
-                        <h3>Asparagus</h3>
-                        <button type="button" class="btn btn-primary glyphicon glyphicon-chevron-right"></button>
+                    <div class="well well-sm text-center" ng-repeat="item in fruits">
+                        <div><button type="button" class="btn btn-primary glyphicon glyphicon-chevron-left"></button>{{item}}<button type="button" class="btn btn-primary glyphicon glyphicon-chevron-right" ng-click="shiftRight($index)"></button></div>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     Fruits
+                    <div class="well well-sm text-center" ng-repeat="item in fruit">
+                        <div><button type="button" class="btn btn-primary glyphicon glyphicon-chevron-left"></button>{{item}}<button type="button" class="btn btn-primary glyphicon glyphicon-chevron-right" ng-click="shiftRight()"></button></div>
+                    </div>
                 </div>                        
             </div>
         </div>
