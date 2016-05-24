@@ -1,6 +1,6 @@
 var app = angular.module("MyApp", []);
 app.controller("HomeCtrl", ['$scope', function($scope) {
-
+	$scope.fruit
 }]);
 
 //debug stuff to show the app is loading and fruit / veggies are available
